@@ -31,7 +31,7 @@ jobs:
           # actions, when using the default account, cannot trigger other actions.
           # This machine account is only for this PAT, pwd was created and thrown away
           # If any update needed, create a new account, add access to the repo and generate a new PAT
-          token: ${{ secrets.MACHINE_ACCOUNT_PAT }}
+          # token: ${{ secrets.MACHINE_ACCOUNT_PAT }}
       # Setup bot information for pushing new changes
       # Here we use the id from the github actions bot: https://api.github.com/users/better-informatics%5Bbot%5D
       - name: Setup bot git information
