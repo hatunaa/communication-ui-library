@@ -2,6 +2,9 @@ name: Update API files
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 # cancel workflow when a newer version of the workflow is triggered on the same github ref
 concurrency:
